@@ -17,9 +17,21 @@ Kos Mate adalah aplikasi terminal untuk membantu anak kost mengorganisir aktivit
 - Belanja bulanan   : membuat daftar belanja bulanan dan menghapus item jika diperlukan.
 - Catatan keuangan  : mencatat pemasukan dan pengeluaran, menghapus data, dan melihat laporan keuangan.
 
-![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20Mate.pdf?raw=true)
-
 ## Cara Menggunakan
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%20main.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%201.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%202.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%203.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%204.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%205.drawio.png?raw=true)
+
+![alt text](https://github.com/Laghaw-a/C-Kelompok-9-Tugas-Algoritma-dan-Pemrograman-Komputer-/blob/main/Kos%20mate%206.drawio.png?raw=true)
+
 - Mulai (start) : proses dimulai dengan inisialisasi aplikasi
 - Kemudian muncul menu utama ynag menampilkan pilihan dari 1-6
 - Input pilihan
