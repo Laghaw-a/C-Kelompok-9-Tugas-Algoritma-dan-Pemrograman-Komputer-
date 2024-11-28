@@ -12,7 +12,7 @@ def kontak_keluarga():
         waktu_kontak = input("Masukkan tanggal pengingat kontak (DD-MM-YYYY): ")
         data_kontak.append({"Nama Kontak": nama_kontak, "Tanggal Pengingat": waktu_kontak})
         tambah_lagi = input("Apakah Anda ingin menambah kontak lagi? (iya/tidak): ").lower()
-        if tambah_lagi != 'iya':
+        if tambah_lagi != 'tidak':
             break
     data_df = pd.DataFrame(data_kontak)
     simpan_data("Kontak Keluarga", data_df)
