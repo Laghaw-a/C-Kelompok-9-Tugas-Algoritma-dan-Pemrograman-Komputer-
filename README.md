@@ -2,8 +2,8 @@
 ## Kelompok  : 9
 ## Anggota   :
 - I0324095 Nihayatul Watsiqoh (Nihaya67)
-- I0324103 Aditya Surya pratama ()
-- I0324129 Anak Agung Ngurah Primus ()
+- I0324103 Aditya Surya pratama (asurr02)
+- I0324129 Anak Agung Ngurah Primus (Laghaw-a)
 
 # Kos Mate : Aplikasi anti _Homesick_ bagi Anak Kost
 
