@@ -81,12 +81,9 @@ def get_data(sheet_name):
             if not data.empty:
                 return data
             else:
-                print(f"Data {sheet_name} kosong.")
                 return None
         except ValueError:
-            print(f"Data {sheet_name} tidak ditemukan pada database.")
             return None
     else:
-        print("File Excel tidak ditemukan.")
         return None
 
