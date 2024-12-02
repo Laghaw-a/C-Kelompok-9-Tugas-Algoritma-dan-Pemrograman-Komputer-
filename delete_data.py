@@ -99,8 +99,8 @@ def hapus_data_menu():
 
             while True:  # Looping dalam kategori "Catatan Keuangan"
                 tampilkan_data("Catatan Keuangan")  # Tampilkan data terbaru
-                tanggal = input("\nMasukkan tanggal transaksi yang ingin dihapus (YYYY-MM-DD): ").strip()
-                hapus_data("Catatan Keuangan", {"Tanggal": tanggal})
+                nama = input("\nMasukkan nama transaksi yang ingin dihapus : ").strip()
+                hapus_data("Catatan Keuangan", {"Nama Transaksi": nama})
                 print("\nData setelah dihapus:")
                 tampilkan_data("Catatan Keuangan")  # Tampilkan data yang baru setelah penghapusan
 
@@ -109,4 +109,4 @@ def hapus_data_menu():
                     break  # Keluar dari loop "Catatan Keuangan" jika jawabannya bukan 'iya'
 
         else:
-            print("Pilihan tidak valid. Silakan pilih nomor yang benar.")
+            print("Pilihan tidak valid. Silakan pilih nomor yang benar.") 
