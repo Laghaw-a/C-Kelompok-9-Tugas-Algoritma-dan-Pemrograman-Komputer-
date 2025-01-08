@@ -87,3 +87,23 @@ def get_data(sheet_name):
     else:
         return None
 
+# Fungsi untuk mengedit data
+def edit_data(sheet_name, kriteria, data_baru):
+    if os.path.exists(file_path):
+        workbook = load_workbook(file_path)
+        if sheet_name in workbook.sheetnames:
+            data = pd.read_excel(file_path, sheet_name=sheet_name)
+            print(f"Data {sheet_name} Saat Ini:\n", data)
+            data_edit = data[data.apply(lambda row: all(row[k] == v for k, v in kriteria.items()), axis=1)]
+            if not data_edit.empty:
+                data.update(data_baru)
+                print("Data yang Diedit:\n", data_edit)
+            else:
+                print("Data tidak ditemukan berdasarkan kriteria yang diberikan.")
+            with pd.ExcelWriter(file_path, mode='a', if_sheet_exists='replace') as writer:
+                data.to_excel(writer, sheet_name=sheet_name, index=False)
+        else:
+            print(f"Data {sheet_name} tidak ditemukan.")
+    else:
+        print("File tidak ditemukan.")
+

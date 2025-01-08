@@ -29,8 +29,15 @@ def kontak_keluarga():
             print(f"Kontak '{nama_kontak}' sudah ada dalam data. Silakan tambahkan kontak lain.")
             continue
         
-        nomor_kontak = input("Masukkan nomor telepon: ")
+        nomor_kontak = input("Masukkan nomor telepon: +62")
+        # Validasi: Pastikan input hanya berupa angka
+        while not nomor_kontak.isdigit():
+         nomor_kontak = input("Nomor telepon harus berupa angka. Masukkan kembali nomor telepon: +62")
+        
         waktu_kontak = input("Masukkan tanggal pengingat kontak (DD-MM-YYYY): ")
+        while not waktu_kontak.isdigit():
+         waktu_kontak = input("Tanggal pengingat harus berupa angka. Masukkan kembali tanggal pengingat kontak (DD-MM-YYYY): ")
+         
         data_kontak.append({"Nama Kontak": nama_kontak, "Nomor Telepon": nomor_kontak, "Tanggal Pengingat": waktu_kontak})
         
         # Tambahkan nama kontak ke set existing_kontak
@@ -71,7 +78,9 @@ def kegiatan_harian():
             print(f"Kegiatan '{kegiatan}' sudah ada dalam data. Silakan tambahkan kegiatan lain.")
             continue
         
-        waktu = input("Masukkan waktu (DD-MM-YYYY HH:MM): ")
+        waktu = input("Masukkan waktu (DD-MM-YYYY): ")
+        while not waktu.isdigit():
+         waktu = input("Waktu harus berupa angka. Masukkan kembali waktu (DD-MM-YYYY): ")
         data_kegiatan.append({"Kegiatan": kegiatan, "Waktu": waktu})
         
         # Tambahkan kegiatan ke set existing_kegiatan
@@ -113,6 +122,8 @@ def tagihan_bulanan():
             continue
         
         jatuh_tempo = input("Masukkan tanggal jatuh tempo (DD-MM-YYYY): ")
+        while not jatuh_tempo.isdigit():
+         jatuh_tempo = input("Tanggal jatuh tempo harus berupa angka. Masukkan kembali tanggal jatuh tempo (DD-MM-YYYY): ")
         data_tagihan.append({"Jenis Tagihan": tagihan, "Jatuh Tempo": jatuh_tempo})
         
         # Tambahkan tagihan ke set existing_tagihan
@@ -153,7 +164,9 @@ def belanja_bulanan():
             print(f"Item '{item}' sudah ada dalam data. Silakan tambahkan item lain.")
             continue
         
-        jumlah = int(input("Masukkan jumlah: "))
+        jumlah = input("Masukkan jumlah: ")
+        while not jumlah.isdigit():
+         jumlah = input("Jumlah harus berupa angka. Masukkan kembali jumlah: ")
         data_belanja.append({"Item": item, "Jumlah": jumlah})
         
         # Tambahkan item ke set existing_items
@@ -197,8 +210,13 @@ def catatan_keuangan():
             print(f"Transaksi '{nama}' sudah ada dalam data. Silakan tambahkan transaksi lain.")
             continue
         
-        jumlah = float(input("Masukkan jumlah: "))
+        jumlah = input("Masukkan jumlah: ")
+        while not jumlah.isdigit():
+         jumlah = input("Jumlah harus berupa angka. Masukkan kembali jumlah: ")
         tanggal = input("Masukkan tanggal transaksi (DD-MM-YYYY): ")
+        while not tanggal.isdigit():
+         tanggal = input("Tanggal transaksi harus berupa angka. Masukkan kembali tanggal transaksi (DD-MM-YYYY): ")
+        
         
         # Tambahkan transaksi ke daftar
         data_keuangan.append({"Jenis Transaksi": jenis, "Nama Transaksi": nama, "Jumlah": jumlah, "Tanggal": tanggal})
